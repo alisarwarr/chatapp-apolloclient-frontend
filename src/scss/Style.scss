@@ -1,0 +1,398 @@
+* {
+    margin: 0;
+
+    a {
+        text-decoration: none !important;
+    }
+
+    button {
+        outline: none !important;
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center !important;
+        span {
+            padding-right: 0.2rem;
+        }
+    }
+
+    .form-control:focus {
+        border-color: rgb(221, 37, 37) !important;
+        box-shadow: 0 0 0 0.125rem rgb(221, 37, 37) !important;
+    }
+
+    input {
+        font-family: myfont !important;
+        margin-right: 0.55rem;
+    }
+
+    .messageform {
+        display: flex !important;
+        align-items: center !important;
+        margin-right: 0.145rem !important;
+        padding: 0.925rem;
+
+        #input1 {
+            width: 5rem !important;
+            text-align: center;
+        }
+        #input2 {
+            width: 48.5rem !important;
+        }    
+    }
+
+    .container {
+        display: flex;
+        align-items: center;
+        margin-top: 9.125rem !important;
+
+        img {
+            object-fit: contain;
+            width: 5rem;
+            height: 5rem;
+        }
+        h1 {
+            margin-left: 0.95rem;
+        }
+    }
+
+    #design {
+        font-family: myfont !important;
+    }
+
+    .swal2-close {
+        //**copied id from inspect
+        outline: none !important;
+        border: transparent !important;
+    }
+
+    .formikform {
+        background-color: black;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+        padding: 2rem;
+        margin-top: 0.9725rem;
+        width: 40% !important;
+    
+        #input0 {
+            color: white !important;
+            text-transform: capitalize !important;
+        }
+        #input0-helper-text {
+        //**copied id from inspect
+            margin-top: 0.3rem;
+            font-family: monospace !important;
+            word-spacing: -0.0425rem;
+            letter-spacing: 0.125rem;
+        }
+
+        .box {
+            flex: 1;
+            margin-top: 0.085rem !important;
+        }
+        .box, button {
+            width: 95% !important;
+        }
+        button {
+            margin-top: 1rem;
+        }
+        button[disabled=disabled], button:disabled {
+            background-color: rgb(59, 58, 58);
+            color: white;
+        }
+    }
+
+    .circle {
+        margin-top: -7px !important;
+        font-family: myfont !important;
+        font-size: 0.85rem !important;
+    }
+}
+body {
+    background-color: rgb(221, 172, 80);
+}
+@font-face {
+    src: url("./myfont.ttf");
+    font-family: myfont;
+}
+
+
+
+
+
+.app {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    overflow: auto;
+    display: flex;
+    justify-content: center;
+
+    background-color: rgb(221, 172, 80);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    p {
+        font-weight: bold;
+        font-family: myfont !important;
+        letter-spacing: 0.12rem;
+        word-spacing: 0.4625rem;
+        margin-top: 1.5rem;
+        span {
+            font-size: 2.85rem;
+            line-height: 3.95rem;
+        }
+    }
+}
+
+
+
+
+
+.card {
+    height: 100% !important;
+    width: 70% !important;
+    margin-top: 1.085rem !important;
+    margin-bottom: 1.5rem !important;
+    background-color: black !important;
+    border-radius: 3px !important;
+}
+
+
+
+
+
+.box {
+    margin-top: 3rem !important;
+
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    flex-direction: column !important;
+    overflow: hidden !important;
+    
+    //sample jumbotron code
+    .jumbotron {
+        background-color: transparent !important;
+        position: relative !important;
+        padding: 0 !important;
+        text-align: center !important;
+        margin-bottom: 0 !important;
+    }
+    //sample jumbotron code
+
+    h1 {
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        text-align: center !important;
+    
+        span {
+            color: white !important;
+            font-size: 3rem !important;
+            font-family: myfont !important;
+            letter-spacing: 0.185rem !important;
+        }
+        
+        div {
+            margin-left: 0.5rem !important;
+            margin-top: 0.3rem !important;
+        }
+    }
+}
+
+
+
+
+
+@media (max-width: 1326px) {
+    html {
+       font-size: 100%;
+    }
+}
+@media (max-width: 1200px) {
+    html {
+       font-size: 95%;
+    }
+}
+@media (max-width: 1100px) {
+    html {
+       font-size: 90%;
+    }
+
+    .formikform {
+        width: 42.5% !important;
+    }
+}
+@media (max-width: 1000px) {
+    html {
+       font-size: 85%;
+    }
+
+    .formikform {
+        width: 45% !important;
+    }
+}
+@media (max-width: 900px) {
+    html {
+       font-size: 80%;
+    }
+
+    .formikform {
+        width: 47.5% !important;
+    }
+}
+@media (max-width: 770px) {
+    html {
+       font-size: 75%;
+    }
+
+    .formikform {
+        width: 50% !important;
+    }
+}
+@media (max-width: 715px) {
+    form {
+        #input1 {
+            width: 4rem !important;
+            margin-left: 0.025rem !important;
+        }
+        #input2 {
+            width: 39rem !important;
+        }
+    }
+    .btn-danger {
+        margin-left: 0.075rem;
+        padding: 0.645rem !important;
+        border-radius: 30px !important;
+        span {
+            display: none;
+        }
+    }
+}
+@media (max-width: 680px) {
+    html {
+       font-size: 70%;
+    }
+
+    .formikform {
+        width: 52.5% !important;
+    }
+}
+@media (max-width: 600px) {
+    html {
+       font-size: 65%;
+    }
+
+    .formikform {
+        width: 55% !important;
+    }
+}
+@media (max-width: 530px) {
+    html {
+       font-size: 60%;
+    }
+
+    .formikform {
+        width: 61.55% !important;
+    }
+}
+@media (max-width: 500px) {
+    .card {
+        width: 85% !important;
+    }
+    .btn-danger {
+        padding: 0.505rem !important;
+    }
+}
+@media (max-width: 400px) {
+    html {
+       font-size: 55%;
+    }
+
+    .formikform {
+        width: 78.75 !important;
+    }
+}
+@media (max-width: 350px) {
+    html {
+       font-size: 53%;
+    }
+
+    .formikform {
+        width: 76.5% !important;
+    }
+}
+@media (max-width: 340px) {
+    html {
+       font-size: 51%;
+    }
+
+    .formikform {
+        width: 74.5% !important;
+    }
+}
+@media (max-width: 330px) {
+    html {
+       font-size: 51%;
+    }
+
+    .formikform {
+        width: 72.75% !important;
+    }
+}
+@media (max-width: 320px) {
+    html {
+       font-size: 51%;
+    }
+
+    .formikform {
+        width: 75% !important;
+    }
+}
+@media (max-width: 240px) {
+    .box {
+        h1 {
+            span {
+                font-size: 3.35rem !important;
+            }
+        }
+    }
+
+    .formikform {
+        width: 79% !important;
+    }
+}
+
+
+
+
+
+.body {
+    overflow-y: scroll !important;
+    overflow-x: hidden !important;
+}
+//stylish scrollbar
+::-webkit-scrollbar {
+    width: 0.935rem;
+    background:lightgray;
+    border-radius: 15px;
+}
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,255,1); 
+    border-radius: 15px;
+}
+::-webkit-scrollbar-thumb {
+    border-radius: 15px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5);
+    background: #91c090;
+}
+//stylish scrollbar
